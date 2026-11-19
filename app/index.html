@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Cover Studio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><h1>GTA VI COVER STUDIO</h1><p>Turn your photo into a GTA 6 cover. Vice City, 2026.</p></header>
+<main>
+  <section class="stage">
+    <canvas id="cover" width="1080" height="1080"></canvas>
+    <p class="hint">Preview is 1080×1080. Exports keep the same layout at each size.</p>
+  </section>
+  <section class="controls">
+    <label class="field">1. Upload your photo
+      <input type="file" id="photo" accept="image/*">
+    </label>
+    <label class="field">Photo title
+      <input type="text" id="title" value="GRAND THEFT AUTO VI" maxlength="40">
+    </label>
+    <label class="field">Tagline
+      <input type="text" id="tagline" value="VICE CITY  •  2026" maxlength="40">
+    </label>
+    <div class="field">2. Preset
+      <div class="presets">
+        <button data-preset="sunset" class="active">Sunset</button>
+        <button data-preset="neon">Neon Night</button>
+        <button data-preset="beach">Beach Day</button>
+      </div>
+    </div>
+    <div class="field">3. Export PNG
+      <div class="exports">
+        <button data-export="1080x1080">1080×1080</button>
+        <button data-export="1080x1350">1080×1350</button>
+        <button data-export="1920x1080">1920×1080</button>
+      </div>
+    </div>
+    <p class="note">Everything runs in your browser. No photo is uploaded anywhere.</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
